@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #eef1f2;
+}
+
+.header {
+  height: 40px;
+  background-color: rgb(12, 12, 87);
+  margin-bottom: 20px;
+}
+
+.textlogo {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+ height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size:20px;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  width: 500px;
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.card-image {
+  position: relative;
+  border: 6px solid white;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.card-image img {
+  width: 500px;
+  height: 300px;
+}
+
+.card:before, .card:after {
+  content: "";
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+  border: 6px solid white;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.card:before {
+  background: black;
+  top: 0px;
+  left: -10px;
+  transform: rotate(-5deg);
+}
+.card:after {
+  background: rgb(94, 12, 87);
+  top: 5px;
+  left: 0px;
+  transform: rotate(4deg);
+}
+
+.card-title {
+  position: absolute;
+  padding: 0 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  bottom:0;
+  left:0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  color: white;
+  font-size: 20px;
+
+}
+
+.text-shadow {
+  text-shadow: 0 0 5px black;
+}
+
+.card-action {
+
+display: flex;
+height: 40px;
+align-items: center;
+padding: 10px;
+border-top: 1px solid black;
+
+} 
+
+.card-action a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.card-action a:hover {
+  color:brown;
+}
+
+.card-content {
+  height: 100px;
+  font-size: 18px;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-content:after {
+  content: "";
+  position: absolute;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(180deg, transparent, #eef1f2 50%);
+}
+
+.searchnews {
+  width: 500px;
+  margin-bottom: 50px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.textfield {
+  width: 100%; /* Ширина поля */
+  padding: 10px 10px 10px 0px; /* Поля */
+  box-sizing: border-box; /* Алгоритм расчёта ширины */
+  border: none;
+  border-bottom: 1px solid black;
+  color: black; /* Цвет текста */
+  opacity: 0.7;
+  font-size: 16px;
+  background-color: #eef1f2;
+ }
+
+ .textfield:focus, .selectcountry:focus{
+  border-bottom: 2px solid rgb(12, 12, 87);
+  outline: none;
+  opacity: 1;
+ }
+
+ .textfield::placeholder {
+  color:black;
+ }
+
+ :focus::-webkit-input-placeholder {
+  color: transparent
+}
+
+:focus::-moz-placeholder {
+  color: transparent
+}
+
+:focus:-moz-placeholder {
+  color: transparent
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent
+}
+
+.selectcountry {
+  margin: 0;
+  width: 100%; /* Ширина поля */
+  padding: 10px 10px 10px 0px; /* Поля */
+  box-sizing: border-box; /* Алгоритм расчёта ширины */
+  border: none;
+  border-bottom: 1px solid black;
+  color: black; /* Цвет текста */
+  opacity: 0.7;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #eef1f2;
+}
+
+h1 {
+  text-align: center;
+  color:rgb(12, 12, 87);
+}
+
+.button {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  text-decoration: none;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background-color: rgb(12, 12, 87);
+  color: #fff;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px dotted #fff;
+}
+
+.button:hover {
+  background-color: brown;
+}
