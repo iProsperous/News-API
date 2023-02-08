@@ -1,6 +1,6 @@
 const url = 'https://iprosperous.github.io/News-API/';
 
-function customHttp() {
+function customHttp(url) {
   return {
     get(url, cb) {
       try {
@@ -55,7 +55,7 @@ function customHttp() {
   };
 }
 // Init http module
-const http = customHttp();
+const http = customHttp(url);
 
 
 
